@@ -29,6 +29,8 @@
       --gradient-left: hsl(214, 15%, 91%);
       --gradient-right: hsl(216, 33%, 97%);
       --on-background: hsl(210, 24%, 16%);
+      --ts-one: rgba(245, 247, 250, 0.1);
+      --ts-two: rgba(31,41, 51, 0.5);
     }
 
     body {
@@ -46,7 +48,7 @@
       justify-content: center;
       min-height: 100vh;
       min-width: 100vw;
-
+      text-shadow: -1px -1px 1px var(--ts-one), 1px 1px 1px var(--ts-two);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -55,6 +57,8 @@
         --gradient-left: hsl(209, 20%, 25%);
         --gradient-right: hsl(210, 24%, 16%);
         --on-background: hsl(214, 15%, 91%);
+        --ts-one: rgba(31,41, 51, 0.1);
+        --ts-two: rgba(245, 247, 250, 0.5);
       }
     }
   </style>
