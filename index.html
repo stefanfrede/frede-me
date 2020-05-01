@@ -47,6 +47,8 @@
         'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
       justify-content: center;
       min-height: 100vh;
+      /* mobile viewport bug fix */
+      min-height: -webkit-fill-available;
       min-width: 100vw;
       text-shadow: -1px -1px 1px var(--ts-one), 1px 1px 1px var(--ts-two);
     }
